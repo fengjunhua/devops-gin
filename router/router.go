@@ -16,8 +16,9 @@ func SetupRouter() *gin.Engine {
 		context.String(http.StatusOK, "hello gin")
 	})
 	router.POST("/POST", func(context *gin.Context) {
+
 		context.String(http.StatusOK, "hello gin post method")
-		
+
 	})
 
 	router.GET("/index", handler.Index)
